@@ -1,6 +1,6 @@
 # EthHire
 
-This template should help get you started developing with Vue 3 in Vite.
+> The application enables users to create job postings, explore available job opportunities, and submit job applications.
 
 ## Recommended IDE Setup
 
