@@ -3,10 +3,10 @@
 </script>
 
 <template>
-  <header class="flex items-center justify-between h-16 border px-24">
-    <RouterLink to="/" class="flex gap-2 items-center">
-      <img src="../assets/logo.svg" alt="EthHire" width="45px" />
-      <span class="text-xl font-medium">EthHire</span>
+  <header class="flex items-center justify-between h-16 border px-24 dark:bg-black">
+    <RouterLink to="/" class="flex gap-1 items-center">
+      <img src="../assets/logo.svg" alt="EthHire" class="w-8" />
+      <span class="text-md font-medium">EthHire</span>
     </RouterLink>
     <nav>
       <ul class="flex gap-1">
