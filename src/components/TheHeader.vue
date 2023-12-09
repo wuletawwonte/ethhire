@@ -11,10 +11,13 @@
     <nav class="text-sm font-medium text-center text-gray-500 dark:text-gray-400 dark:border-gray-700 w-2/5">
       <ul class="flex flex-wrap -mb-px">
         <li class="me-2">
-          <RouterLink to="/" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" active-class="text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500">Home</RouterLink>
+          <RouterLink to="/" class="inline-block p-4 border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" active-class="text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500">Home</RouterLink>
         </li>
         <li class="me-2">
-          <RouterLink to="/about" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" active-class="text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500">About</RouterLink>
+          <RouterLink to="/about" class="inline-block p-4 border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" active-class="text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500">About</RouterLink>
+        </li>
+        <li class="me-2">
+          <RouterLink to="/contact" class="inline-block p-4 border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" active-class="text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500">Contact</RouterLink>
         </li>
       </ul>
     </nav>
