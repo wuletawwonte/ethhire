@@ -5,7 +5,7 @@
 <template>
   <header class="border">
     <nav>
-      <ul>
+      <ul class="flex">
         <li>
           <RouterLink to="/">Home</RouterLink>
         </li>
