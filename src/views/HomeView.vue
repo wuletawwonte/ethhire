@@ -1,5 +1,13 @@
+<script setup lang="ts">
+  // import { RouterLink } from 'vue-router'
+import TheDropdown from '@/components/TheDropdown.vue';
+import TheFilter from '@/components/TheFilter.vue';
+
+</script>
+
 <template>
-  <main>
-    <h2>Hello there</h2>
+  <TheFilter />
+  <main class="flex min-h-screen justify-center pt-24">
+    <TheDropdown />
   </main>
 </template>
