@@ -28,6 +28,10 @@
       <input type="text" placeholder="Search" class="bg-gray-200 focus:bg-white border-transparent focus:border focus:border-blue-400 rounded px-4 py-1 outline-none" />
 
       <div class="flex gap-1 items-center">
+        <button type="button" class="text-gray-500 inline-flex items-center justify-center dark:text-gray-400 hover:bg-gray-100 w-10 h-9 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded text-sm p-1">
+          <font-awesome-icon :icon="['fas', 'sun']" />
+          <span class="sr-only">Icon description</span>
+        </button>
         <button class="border rounded px-2 py-1">Login</button>
         <button class="border rounded px-2 py-1">Sign Up</button>
       </div>
