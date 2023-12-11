@@ -51,7 +51,7 @@
 </script>
 
 <template>
-  <div ref="dropdownMenuContainer">
+  <div ref="dropdownMenuContainer" class="relative" >
     <div class="relative">
       <input 
         v-if="editable" 
@@ -91,7 +91,7 @@
       enter-to-class="translate-y-0 scale-y-100 opacity-100"      
       enter-active-class="transform transition duration-500 ease-and-out"
       >
-      <div v-if="focused" class="z-10 bg-white rounded-lg shadow w-60 dark:bg-gray-700">
+      <div v-if="focused" class="z-10 absolute bg-white rounded-lg shadow w-60 dark:bg-gray-700">
 
         <div v-if="searchable" class="p-3 border-b border-gray-200 bg-slate-100">
           <label for="input-group-search" class="sr-only">Search</label>
