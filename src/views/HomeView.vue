@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  // import { RouterLink } from 'vue-router'
-import TheDropdown from '@/components/TheDropdown.vue';
 import TheFilter from '@/components/TheFilter.vue';
 
 </script>
@@ -8,6 +6,6 @@ import TheFilter from '@/components/TheFilter.vue';
 <template>
   <TheFilter />
   <main class="flex min-h-screen justify-center pt-24">
-    <TheDropdown withIcon />
+    <h2>Homepage</h2>
   </main>
 </template>

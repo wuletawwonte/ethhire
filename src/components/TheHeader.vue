@@ -5,7 +5,7 @@
 <template>
   <header class="flex items-center justify-between border px-16 dark:bg-gray-900">
     <div class="flex items-center gap-24">
-      <RouterLink to="/" class="flex gap-1 items-center">
+      <RouterLink to="/" class="flex gap-2 items-center">
         <img src="../assets/logo.svg" alt="EthHire" class="w-8" />
         <span class="text-md font-medium">EthHire</span>
       </RouterLink>
