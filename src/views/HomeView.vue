@@ -8,6 +8,6 @@ import TheFilter from '@/components/TheFilter.vue';
 <template>
   <TheFilter />
   <main class="flex min-h-screen justify-center pt-24">
-    <TheDropdown placeholder="People" />
+    <TheDropdown withIcon />
   </main>
 </template>

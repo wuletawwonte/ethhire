@@ -21,6 +21,10 @@
     bordered: {
       type: Boolean,
       default: false
+    },
+    withIcon: {
+      type: Boolean,
+      default: false
     }
   })
 
@@ -48,26 +52,38 @@
 
 <template>
   <div ref="dropdownMenuContainer">
-    <input 
-      v-if="editable" 
-      type="text"
-      ref="input" 
-      :placeholder="placeholder"
-      class="w-60 origin-top-left outline-none focus:ring-2 placeholder-gray-400 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500/50 focus:border-blue-500 focus:bg-transparent p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-      :class="{'bg-gray-50 border-2 border-gray-300': bordered, 'border-transparent': !bordered}"
-      autocomplete="off" 
-      @focus="onFocus"
-      @blur="onBlur"
-      />
-    <span 
-      v-else
-      class="block w-60 origin-top-left text-gray-400 cursor-pointer text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:text-white"
-      :class="{'border-2 border-gray-400': bordered, 'border-transparent': !bordered, 'text-gray-900': focused}"
-      @click="toggleDropdown"
-      @blur="onBlur"
-      >
-      {{ placeholder }}
-    </span>
+    <div class="relative">
+      <input 
+        v-if="editable" 
+        type="text"
+        ref="input" 
+        :placeholder="placeholder"
+        class="relative w-60 origin-top-left outline-none focus:ring-2 placeholder-gray-400 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500/50 focus:border-blue-500 focus:bg-transparent p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        :class="{'bg-gray-50 border-2 border-gray-300': bordered, 'border-transparent': !bordered}"
+        autocomplete="off" 
+        @focus="onFocus"
+        @blur="onBlur"
+        />
+      <span 
+        v-else
+        class="relative block w-60 origin-top-left text-gray-400 cursor-pointer text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:text-white"
+        :class="{'border-2 border-gray-400': bordered, 'border-transparent': !bordered, 'text-gray-900': focused}"
+        @click="toggleDropdown"
+        @blur="onBlur"
+        >
+        {{ placeholder }}
+      </span>
+
+      <!-- Dropdown icon -->
+      <font-awesome-icon 
+        v-if="withIcon"
+        :icon="['fas', 'chevron-down']" 
+        class="absolute right-3 top-3.5 text-gray-500 dark:text-gray-400 cursor-pointer" 
+        @click="toggleDropdown"
+        />
+
+
+    </div>
 
     <!-- Dropdown menu -->
     <Transition 
