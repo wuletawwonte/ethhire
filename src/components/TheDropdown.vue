@@ -8,7 +8,7 @@
   defineProps({
     editable: {
       type: Boolean,
-      default: true
+      default: false
     },
     placeholder: {
       type: String,
@@ -20,7 +20,7 @@
     },
     bordered: {
       type: Boolean,
-      default: true
+      default: false
     }
   })
 
