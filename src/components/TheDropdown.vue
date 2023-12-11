@@ -3,7 +3,7 @@
   import { ref } from 'vue';
 
   const input = ref<HTMLInputElement | null>()
-  const active = ref(false)
+  const focused = ref(false)
 
   defineProps({
     editable: {
@@ -17,11 +17,11 @@
   })
 
   const onFocus = () => {
-    active.value = true
+    focused.value = true
   }
 
   const onBlur = () => {
-    active.value = false
+    focused.value = false
   }
 
 </script>
@@ -32,8 +32,8 @@
       v-if="editable" 
       type="text"
       ref="input" 
-      :placeholder="placeholder" 
-      class="placeholder-gray-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      :placeholder="placeholder"
+      class="placeholder-gray-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       autocomplete="off" 
       @focus="onFocus"
       @blur="onBlur"
@@ -41,24 +41,23 @@
     <span 
       v-else
       class="text-gray-400"
+      @click="onFocus"
+      @blur="onBlur"
       >
       {{ placeholder }}
     </span>
 
     <!-- Dropdown menu -->
-    <div v-if="active" class="z-10 bg-white rounded-lg shadow w-60 dark:bg-gray-700">
+    <div v-if="focused" class="z-10 bg-white rounded-lg shadow w-60 dark:bg-gray-700">
 
       <div class="p-3 border-b border-gray-200">
         <label for="input-group-search" class="sr-only">Search</label>
         <div class="relative">
-          <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-          </div>
-          <input type="text" id="input-group-search" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search user">
+          <input type="text" id="input-group-search" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search user">
+          <font-awesome-icon :icon="['fas', 'filter']" class="w-4 h-4 text-gray-500 absolute right-3 top-3 dark:text-gray-400 ps-3 cursor-auto" />
         </div>
       </div>
+
       <ul class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
         <li>
           <div class="flex items-center ps-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
