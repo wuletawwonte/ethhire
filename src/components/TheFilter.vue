@@ -17,9 +17,6 @@
       <TheDropdown placeholder="Per month" withIcon />
     </div>
     <div class="px-4 py-0 self-start pt-1">      
-      <!-- <font-awesome-icon :icon="['fas', 'hand-holding-dollar']" class="border border-slate-400 p-1 rounded-full w-4 h-4 text-slate-700" />
-      <TheDropdown placeholder="Per month" withIcon /> -->
-      <!-- between two numbers -->
 
       <div class="flex flex-col w-64 m-auto items-center h-16 justify-center">
         <h2 class="self-start text-slate-700">Salary Range</h2>  
