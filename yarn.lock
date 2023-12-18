@@ -1042,10 +1042,10 @@
     js-beautify "^1.14.9"
     vue-component-type-helpers "^1.8.21"
 
-"@vue/tsconfig@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@vue/tsconfig/-/tsconfig-0.5.0.tgz#d2676a2bc990261287888e1c5941a1c166a9b751"
-  integrity sha512-vRNRhhZfoJganWuqWuePo7ol2MaG9XkQD3jVJy2WuZOWWa5LAjJqnBSBsTGKvCrcrVMe5nPM9Intp7o3ekRjUw==
+"@vue/tsconfig@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@vue/tsconfig/-/tsconfig-0.5.1.tgz#3124ec16cc0c7e04165b88dc091e6b97782fffa9"
+  integrity sha512-VcZK7MvpjuTPx2w6blwnwZAu5/LgBUtejFOi3pPGQFXQN5Ela03FUtd2Qtg4yWGGissVL0dr6Ro1LfOFh+PCuQ==
 
 abbrev@^2.0.0:
   version "2.0.0"
