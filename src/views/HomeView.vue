@@ -1,13 +1,8 @@
-<script setup lang="ts">
-import TheFilter from '@/components/TheFilter.vue';
-import TheSidebar from '@/components/TheSidebar.vue';
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <TheFilter />
-  <main class="flex min-h-screen">
-    <TheSidebar />
-    <h2>Homepage</h2>
+  <main class="flex gap-6">
+    <h2>Homeview</h2>
+    <button class="btn btn-primary">Test BTN</button>
   </main>
 </template>
