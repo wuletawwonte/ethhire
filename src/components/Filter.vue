@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-2 h-24 border px-16 md:grid-cols-4">
+  <div class="grid gap-2 min-h-24 border px-16 py-4 md:grid-cols-2 lg:grid-cols-4">
     <div class="px-4 py-0 flex items-center gap-2">
       <font-awesome-icon
         :icon="['fas', 'briefcase']"
@@ -37,6 +37,12 @@
         <option>Per month</option>
         <option>Per year</option>
       </select>
+    </div>
+    <div class="py-0 flex flex-col justify-center">
+      <div class="label">
+        <span class="label-text">What is your expectation?</span>
+      </div>
+      <input type="range" min="0" max="100" value="40" class="range range-accent range-xs" />
     </div>
   </div>
 </template>
