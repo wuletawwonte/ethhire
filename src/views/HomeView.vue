@@ -1,8 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Filter from '@/components/Filter.vue'
+</script>
 
 <template>
-  <main class="flex gap-6">
-    <h2>Homeview</h2>
-    <button class="btn btn-primary">Test BTN</button>
+  <main class="flex flex-col">
+    <Filter />
   </main>
 </template>
