@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-300 shadow-sm lg:px-16">
+  <div class="navbar bg-primary text-primary-content shadow-sm lg:px-16">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -89,7 +89,7 @@
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </label>
-      <a class="btn">Button</a>
+      <a class="btn btn-secondary">Button</a>
     </div>
   </div>
 </template>
