@@ -5,9 +5,9 @@ import Filter from '@/components/Filter.vue'
 
 <template>
   <Filter />
-  <div class="antialiased bg-gray-50 dark:bg-gray-900 flex">
+  <div class="antialiased bg-gray-50 dark:bg-gray-900 flex overflow-hidden">
     <Sidebar />
-    <main class="p-4 h-auto border">
+    <main class="p-4 h-auto border w-full">
       <div class="flex items-center gap-2">
         <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Featured Jobs</h2>
         <div class="badge badge-outline">128</div>
