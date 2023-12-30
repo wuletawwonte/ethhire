@@ -41,52 +41,6 @@ import { jobs } from '@/data/jobs.ts'
             <button class="btn btn-primary btn-sm rounded-full">Button</button>
           </div>
         </div>
-
-        <div class="card shadow-md border bg-white glass p-1">
-          <div class="card-body p-4 bg-pink-200 rounded-xl shadow-sm">
-            <div class="flex">
-              <div class="badge bg-white py-3">Feb 24, 2023</div>
-            </div>
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="flex gap-1">
-              <div class="badge badge-outline py-3 px-2 border-stone-400">default</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">primary</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">secondary</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">accent</div>
-            </div>
-          </div>
-          <div class="flex p-4 items-center justify-between">
-            <div class="flex flex-col">
-              <div class="font-bold">$25/hr</div>
-              <div class="stat-title">Downloads</div>
-            </div>
-            <button class="btn btn-primary btn-sm rounded-full">Button</button>
-          </div>
-        </div>
-
-        <div class="card w-96 shadow-md border bg-white glass p-1">
-          <div class="card-body p-4 bg-blue-200 rounded-xl shadow-sm">
-            <div class="flex">
-              <div class="badge bg-white py-3">Feb 24, 2023</div>
-            </div>
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="flex gap-1">
-              <div class="badge badge-outline py-3 px-2 border-stone-400">default</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">primary</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">secondary</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">accent</div>
-            </div>
-          </div>
-          <div class="flex p-4 items-center justify-between">
-            <div class="flex flex-col">
-              <div class="font-bold">$25/hr</div>
-              <div class="stat-title">Downloads</div>
-            </div>
-            <button class="btn btn-primary btn-sm rounded-full">Button</button>
-          </div>
-        </div>
       </div>
     </main>
   </div>
