@@ -24,7 +24,7 @@ import { jobs } from '@/data/jobs.ts'
             <div class="flex">
               <div class="badge bg-white py-3">Feb 24, 2023</div>
             </div>
-            <h2 class="card-title">Card title!</h2>
+            <h2 class="card-title">{{ job.title }}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="flex gap-1 flex-wrap">
               <div class="badge badge-outline py-3 px-2 border-stone-400">default</div>
