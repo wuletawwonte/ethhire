@@ -2,6 +2,14 @@
 import Sidebar from '@/components/Sidebar.vue'
 import Filter from '@/components/Filter.vue'
 import { jobs } from '@/data/jobs.ts'
+
+const formatDate = (date: string): string => {
+  return new Date(date).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  })
+}
 </script>
 
 <template>
@@ -22,7 +30,7 @@ import { jobs } from '@/data/jobs.ts'
         >
           <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.color + '-200'">
             <div class="flex">
-              <div class="badge bg-white py-3">Feb 24, 2023</div>
+              <div class="badge bg-white py-3">{{ formatDate(job.created_at) }}</div>
             </div>
             <h2 class="card-title">{{ job.title }}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
