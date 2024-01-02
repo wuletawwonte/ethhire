@@ -30,15 +30,15 @@ const formatDate = (date: string): string => {
         >
           <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.color + '-200'">
             <div class="flex">
-              <div class="badge bg-white py-3">{{ formatDate(job.created_at) }}</div>
+              <div class="badge badge-sm bg-white p-2">{{ formatDate(job.created_at) }}</div>
             </div>
             <h2 class="card-title">{{ job.title }}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="flex gap-1 flex-wrap">
-              <div class="badge badge-outline py-3 px-2 border-stone-400">default</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">primary</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">secondary</div>
-              <div class="badge badge-outline py-3 px-2 border-stone-400">accent</div>
+              <div class="badge badge-outline badge-sm py-2 px-2 border-stone-400">default</div>
+              <div class="badge badge-outline badge-sm py-2 px-2 border-stone-400">primary</div>
+              <div class="badge badge-outline badge-sm py-2 px-2 border-stone-400">secondary</div>
+              <div class="badge badge-outline badge-sm py-2 px-2 border-stone-400">accent</div>
             </div>
           </div>
           <div class="flex p-4 items-center justify-between">
