@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Sidebar from '@/components/Sidebar.vue'
 import Filter from '@/components/Filter.vue'
-import { jobs } from '@/data/jobs.ts'
+import { jobs } from '@/data/jobs'
 
 const formatDate = (date: string): string => {
   return new Date(date).toLocaleDateString('en-US', {
@@ -24,7 +24,7 @@ const formatDate = (date: string): string => {
 
       <div class="flex mt-4 gap-4 flex-wrap">
         <div
-          v-for="job in jobs.featured"
+          v-for="job in jobs"
           :key="job.id"
           class="card w-64 shadow-md border bg-white glass p-1"
         >
