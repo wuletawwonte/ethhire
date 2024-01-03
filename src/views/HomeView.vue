@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import Sidebar from '@/components/Sidebar.vue'
 import Filter from '@/components/Filter.vue'
-import { jobs } from '@/data/jobs'
+import { useJobStore } from '@/stores/global'
+import { storeToRefs } from 'pinia'
+
+const jobStore = useJobStore()
+const { jobs } = storeToRefs(jobStore)
 
 const formatDate = (date: string): string => {
   return new Date(date).toLocaleDateString('en-US', {
