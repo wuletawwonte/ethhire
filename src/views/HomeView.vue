@@ -18,11 +18,11 @@ const formatDate = (date: string): string => {
 
 <template>
   <Filter />
-  <div class="antialiased bg-gray-50 dark:bg-gray-900 flex max-w-screen">
+  <div class="antialiased bg-base-100 text-neutral-content flex max-w-screen">
     <Sidebar />
-    <main class="p-4 h-auto border w-full">
+    <main class="p-4 h-auto w-full">
       <div class="flex items-center gap-2">
-        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Featured Jobs</h2>
+        <h2 class="text-2xl font-semibold">Featured Jobs</h2>
         <div class="badge badge-outline">128</div>
       </div>
 
@@ -30,11 +30,11 @@ const formatDate = (date: string): string => {
         <div
           v-for="job in jobs"
           :key="job.id"
-          class="card w-64 shadow-md border bg-white glass p-1"
+          class="card w-64 shadow-md bg-base-100 text-primary-content border border-base-300 p-1"
         >
-          <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.color + '-200'">
+          <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.color + '-100'">
             <div class="flex">
-              <div class="badge badge-sm bg-white p-2">{{ formatDate(job.created_at) }}</div>
+              <div class="badge badge-sm bg-base-100 p-2">{{ formatDate(job.created_at) }}</div>
             </div>
             <h2 class="card-title">{{ job.title }}</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>

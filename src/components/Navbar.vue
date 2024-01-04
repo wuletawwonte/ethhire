@@ -15,7 +15,7 @@ const toggleDark = () => {
 </script>
 
 <template>
-  <div class="navbar bg-primary text-primary-content shadow-sm lg:px-16">
+  <div class="navbar bg-base-100 shadow-sm lg:px-16">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">

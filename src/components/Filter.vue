@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-2 min-h-24 border px-16 py-4 md:grid-cols-2 lg:grid-cols-4">
+  <div class="bg-base-300 grid gap-2 min-h-24 px-16 py-4 md:grid-cols-2 lg:grid-cols-4">
     <div class="px-4 py-0 flex items-center gap-2">
       <font-awesome-icon
         :icon="['fas', 'briefcase']"
