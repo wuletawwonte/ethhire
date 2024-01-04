@@ -9,7 +9,8 @@
 // }
 
 const toggleDark = () => {
-  document.documentElement.classList.toggle('dark')
+  // document.documentElement.classList.toggle('dark')
+  document.querySelector('html')?.setAttribute('data-theme', 'dark')
 }
 </script>
 
