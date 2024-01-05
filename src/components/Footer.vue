@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer class="footer items-center p-4 bg-base-300 lg:px-16 sticky bottom-0">
+  <footer class="footer items-center p-4 bg-base-300 lg:px-16">
     <aside class="items-center grid-flow-col">
       <font-awesome-icon :icon="['fas', 'hashtag']" />
       <p>Copyright © {{ new Date().getFullYear() }} - All right reserved</p>
