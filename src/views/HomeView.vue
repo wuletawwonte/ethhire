@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Sidebar from '@/components/Sidebar.vue'
 import Filter from '@/components/Filter.vue'
-import { useJobStore } from '@/stores/global'
+import { useJobStore } from '@/stores/job'
 import { storeToRefs } from 'pinia'
 
 const jobStore = useJobStore()
