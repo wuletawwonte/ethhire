@@ -50,6 +50,8 @@ app.use(router)
 
 const store = useThemeStore()
 
+store.initializeTheme()
+
 if (store.theme.isDark) {
   document.querySelector('html')?.setAttribute('data-theme', 'dark')
 } else {

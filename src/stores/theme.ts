@@ -8,7 +8,17 @@ export const useThemeStore = defineStore('theme', () => {
 
   const toggleTheme = () => {
     theme.value.isDark = !theme.value.isDark
+    localStorage.setItem('isDark', JSON.stringify(theme.value.isDark))
   }
 
-  return { theme, toggleTheme }
+  const initializeTheme = () => {
+    const storedTheme = localStorage.getItem('isDark')
+    if (storedTheme) {
+      theme.value.isDark = JSON.parse(storedTheme)
+    } else {
+      localStorage.setItem('isDark', JSON.stringify(theme.value.isDark))
+    }
+  }
+
+  return { theme, toggleTheme, initializeTheme }
 })
