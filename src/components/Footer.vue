@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer class="footer items-center p-4 bg-neutral text-neutral-content lg:px-16">
+  <footer class="footer items-center p-4 bg-base-300 lg:px-16 sticky bottom-0">
     <aside class="items-center grid-flow-col">
       <svg
-        width="36"
-        height="36"
+        width="24"
+        height="24"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         fill-rule="evenodd"
