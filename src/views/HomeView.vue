@@ -32,7 +32,7 @@ const formatDate = (date: string): string => {
           :key="job.id"
           class="card w-64 shadow-md bg-base-100 border border-base-300 p-1"
         >
-          <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.color + '-100'">
+          <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.id + '-100'">
             <div class="flex">
               <div class="badge badge-sm bg-base-100 p-2">{{ formatDate(job.created_at) }}</div>
             </div>
