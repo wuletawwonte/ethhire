@@ -17,8 +17,11 @@ import {
   faChevronDown,
   faCity,
   faBriefcase,
-  faHandHoldingDollar
+  faHandHoldingDollar,
+  faHashtag,
+  faCode
 } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import App from './App.vue'
 import router from './router'
@@ -31,6 +34,12 @@ library.add(faChevronDown)
 library.add(faCity)
 library.add(faBriefcase)
 library.add(faHandHoldingDollar)
+library.add(faHashtag)
+library.add(faCode)
+library.add(faGithub)
+library.add(faFacebook)
+library.add(faYoutube)
+library.add(faLinkedin)
 
 const app = createApp(App)
 
