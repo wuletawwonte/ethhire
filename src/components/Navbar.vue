@@ -8,7 +8,7 @@ const toggleDark = () => {
   if (themeStore.theme.isDark) {
     document.querySelector('html')?.setAttribute('data-theme', 'dark')
   } else {
-    document.querySelector('html')?.setAttribute('data-theme', '')
+    document.querySelector('html')?.removeAttribute('data-theme')
   }
 }
 </script>
