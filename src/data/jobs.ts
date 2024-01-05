@@ -54,16 +54,16 @@ export const jobs: Job[] = [
     job_type: 'internship',
     created_at: '2023-07-19T04:47:14.577Z',
     updated_at: '2023-07-19T04:47:14.577Z'
-  },
-  {
-    id: 50,
-    title: 'Senior Design Supervisor',
-    color: 'blue',
-    description: 'Accounting',
-    location: 'West Joesphchester',
-    salary: '17485.0',
-    job_type: 'full_time',
-    created_at: '2023-07-19T04:47:14.582Z',
-    updated_at: '2023-07-19T04:47:14.582Z'
   }
+  // {
+  //   id: 50,
+  //   title: 'Senior Design Supervisor',
+  //   color: 'blue',
+  //   description: 'Accounting',
+  //   location: 'West Joesphchester',
+  //   salary: '17485.0',
+  //   job_type: 'full_time',
+  //   created_at: '2023-07-19T04:47:14.582Z',
+  //   updated_at: '2023-07-19T04:47:14.582Z'
+  // }
 ]

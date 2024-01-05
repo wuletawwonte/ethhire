@@ -1,15 +1,5 @@
 <script setup lang="ts">
-// import { ref } from 'vue'
-
-// const globalTheme = ref()
-
-// const toggleTheme = () => {
-//   console.log(globalTheme.value)
-//   globalTheme.value = globalTheme.value === 'light' ? 'dark' : 'light'
-// }
-
 const toggleDark = () => {
-  // document.documentElement.classList.toggle('dark')
   document.querySelector('html')?.setAttribute('data-theme', 'dark')
 }
 </script>

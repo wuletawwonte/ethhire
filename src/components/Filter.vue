@@ -3,7 +3,7 @@
     <div class="px-4 py-0 flex items-center gap-2">
       <font-awesome-icon
         :icon="['fas', 'briefcase']"
-        class="border border-slate-400 p-2 rounded-full w-4 h-4 text-slate-700"
+        class="border border-base-100 p-2 rounded-full w-4 h-4 text-base-content"
       />
       <select class="select select-sm w-full max-w-xs">
         <option disabled selected>Job Type</option>
@@ -14,7 +14,7 @@
     <div class="px-4 py-0 flex items-center gap-2">
       <font-awesome-icon
         :icon="['fas', 'city']"
-        class="border border-slate-400 p-2 rounded-full w-4 h-4 text-slate-700"
+        class="border border-base-100 p-2 rounded-full w-4 h-4 text-base-content"
       />
       <select class="select select-sm w-full max-w-xs">
         <option disabled selected>Pick a city</option>
@@ -28,7 +28,7 @@
     <div class="px-4 py-0 flex items-center gap-2">
       <font-awesome-icon
         :icon="['fas', 'hand-holding-dollar']"
-        class="border border-slate-400 p-2 rounded-full w-4 h-4 text-slate-700"
+        class="border border-base-100 p-2 rounded-full w-4 h-4 text-base-content"
       />
       <select class="select select-sm w-full max-w-xs">
         <option disabled selected>Sallary</option>

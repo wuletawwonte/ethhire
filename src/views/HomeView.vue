@@ -18,7 +18,7 @@ const formatDate = (date: string): string => {
 
 <template>
   <Filter />
-  <div class="antialiased bg-base-100 text-neutral-content flex max-w-screen">
+  <div class="antialiased bg-base-100 flex max-w-screen">
     <Sidebar />
     <main class="p-4 h-auto w-full">
       <div class="flex items-center gap-2">
@@ -30,7 +30,7 @@ const formatDate = (date: string): string => {
         <div
           v-for="job in jobs"
           :key="job.id"
-          class="card w-64 shadow-md bg-base-100 text-primary-content border border-base-300 p-1"
+          class="card w-64 shadow-md bg-base-100 border border-base-300 p-1"
         >
           <div class="card-body p-4 rounded-xl shadow-sm" :class="'bg-' + job.color + '-100'">
             <div class="flex">
