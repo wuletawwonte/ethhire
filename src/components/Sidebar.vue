@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="min-h-screen pt-8 transition-transform -translate-x-full bg-base-100 border-r border-base-200 md:translate-x-0"
+    class="h-auto pt-8 transition-transform -translate-x-full bg-base-100 border-r border-base-200 md:translate-x-0"
     aria-label="Sidenav"
   >
     <div class="overflow-y-auto py-5 px-3 h-full">

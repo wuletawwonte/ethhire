@@ -18,7 +18,7 @@ const formatDate = (date: string): string => {
 
 <template>
   <Filter />
-  <div class="antialiased bg-base-100 flex max-w-screen">
+  <div class="antialiased grow bg-base-100 flex max-w-screen h-full">
     <Sidebar />
     <main class="p-4 h-auto w-full">
       <div class="flex items-center gap-2">

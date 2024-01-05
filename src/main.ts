@@ -17,11 +17,15 @@ import {
   faChevronDown,
   faCity,
   faBriefcase,
-  faHandHoldingDollar
+  faHandHoldingDollar,
+  faHashtag,
+  faCode
 } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import App from './App.vue'
 import router from './router'
+import { useThemeStore } from './stores/theme'
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -31,11 +35,27 @@ library.add(faChevronDown)
 library.add(faCity)
 library.add(faBriefcase)
 library.add(faHandHoldingDollar)
+library.add(faHashtag)
+library.add(faCode)
+library.add(faGithub)
+library.add(faFacebook)
+library.add(faYoutube)
+library.add(faLinkedin)
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(router)
+
+const store = useThemeStore()
+
+store.initializeTheme()
+
+if (store.theme.isDark) {
+  document.querySelector('html')?.setAttribute('data-theme', 'dark')
+} else {
+  document.querySelector('html')?.setAttribute('data-theme', '')
+}
 
 app.mount('#app')
