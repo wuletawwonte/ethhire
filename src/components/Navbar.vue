@@ -1,6 +1,15 @@
 <script setup lang="ts">
+import { useThemeStore } from '@/stores/theme'
+
+const themeStore = useThemeStore()
+
 const toggleDark = () => {
-  document.querySelector('html')?.setAttribute('data-theme', 'dark')
+  themeStore.toggleTheme()
+  if (themeStore.theme.isDark) {
+    document.querySelector('html')?.setAttribute('data-theme', 'dark')
+  } else {
+    document.querySelector('html')?.setAttribute('data-theme', '')
+  }
 }
 </script>
 
@@ -62,7 +71,7 @@ const toggleDark = () => {
 
         <!-- sun icon -->
         <svg
-          class="swap-on fill-current w-6 h-6"
+          class="swap-off fill-current w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -73,7 +82,7 @@ const toggleDark = () => {
 
         <!-- moon icon -->
         <svg
-          class="swap-off fill-current w-6 h-6"
+          class="swap-on fill-current w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

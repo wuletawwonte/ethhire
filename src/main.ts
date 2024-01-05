@@ -25,6 +25,7 @@ import { faGithub, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-b
 
 import App from './App.vue'
 import router from './router'
+import { useThemeStore } from './stores/theme'
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -46,5 +47,13 @@ const app = createApp(App)
 app.use(createPinia())
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(router)
+
+const store = useThemeStore()
+
+if (store.theme.isDark) {
+  document.querySelector('html')?.setAttribute('data-theme', 'dark')
+} else {
+  document.querySelector('html')?.setAttribute('data-theme', '')
+}
 
 app.mount('#app')

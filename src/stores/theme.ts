@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 export const useThemeStore = defineStore('theme', () => {
   const theme = ref({
-    isDark: true
+    isDark: false
   })
 
   const toggleTheme = () => {
