@@ -8,12 +8,12 @@ export default {
     themes: ['light', 'dark']
   },
   safelist: [
-    'bg-red-100',
-    'bg-green-100',
-    'bg-blue-100',
-    'bg-yellow-100',
-    'bg-indigo-100',
-    'bg-purple-100',
-    'bg-pink-100'
+    'bg-red-300',
+    'bg-green-300',
+    'bg-blue-300',
+    'bg-yellow-300',
+    'bg-indigo-300',
+    'bg-purple-300',
+    'bg-pink-300'
   ]
 }
