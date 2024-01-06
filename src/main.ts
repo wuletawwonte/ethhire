@@ -19,7 +19,8 @@ import {
   faBriefcase,
   faHandHoldingDollar,
   faHashtag,
-  faCode
+  faCode,
+  faMoon
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -41,6 +42,7 @@ library.add(faGithub)
 library.add(faFacebook)
 library.add(faYoutube)
 library.add(faLinkedin)
+library.add(faMoon)
 
 const app = createApp(App)
 
