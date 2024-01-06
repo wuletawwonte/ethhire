@@ -48,7 +48,7 @@ const toggleDark = () => {
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">Ethhire</a>
+      <router-link to="/" class="btn btn-ghost text-xl">Ethhire</router-link>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -79,7 +79,7 @@ const toggleDark = () => {
         <font-awesome-icon :icon="['fas', 'moon']" class="swap-on fa-lg" />
       </label>
 
-      <button type="button" class="btn btn-outline btn-primary">Signup</button>
+      <router-link to="/login" class="btn btn-outline btn-primary">Login </router-link>
       <button type="button" class="btn btn-ghost">For Employers</button>
     </div>
   </div>
