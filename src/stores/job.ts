@@ -1,4 +1,4 @@
-import { onBeforeMount, ref } from 'vue'
+import { onBeforeMount, ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
@@ -10,11 +10,13 @@ interface Job {
   location: string
   salary: string
   job_type: string
+  category_id: number
   created_at: string
   updated_at: string
 }
 
 export const useJobStore = defineStore('job', () => {
+  const JOBCOLORS = ['blue', 'green', 'red', 'yellow', 'purple', 'pink']
   const jobs = ref([] as Job[])
 
   const fetchJobs = () => {
@@ -28,9 +30,18 @@ export const useJobStore = defineStore('job', () => {
       })
   }
 
+  const coloredJobs = computed(() => {
+    return jobs.value.map((job) => {
+      return {
+        ...job,
+        color: JOBCOLORS[job.category_id % JOBCOLORS.length]
+      }
+    })
+  })
+
   onBeforeMount(() => {
     fetchJobs()
   })
 
-  return { jobs, fetchJobs }
+  return { jobs, fetchJobs, coloredJobs }
 })
