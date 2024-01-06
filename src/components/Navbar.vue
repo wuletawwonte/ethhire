@@ -55,25 +55,32 @@ const toggleDark = () => {
         <li><a>Item 1</a></li>
         <li>
           <details>
-            <summary>Parent</summary>
+            <summary>Resources</summary>
             <ul class="p-2">
               <li><a>Submenu 1</a></li>
               <li><a>Submenu 2</a></li>
             </ul>
           </details>
         </li>
-        <li><a>Item 3</a></li>
+        <li><a>About</a></li>
       </ul>
     </div>
-    <div class="navbar-end flex gap-6">
-      <label class="swap swap-rotate">
-        <input type="checkbox" class="theme-controller" value="light" @click="toggleDark" />
+    <div class="navbar-end flex gap-3">
+      <label class="swap swap-rotate mr-2">
+        <input
+          type="checkbox"
+          :checked="!themeStore.theme.isDark"
+          class="theme-controller"
+          value="light"
+          @click="toggleDark"
+        />
 
         <font-awesome-icon :icon="['fas', 'sun']" class="swap-off fa-lg" />
         <font-awesome-icon :icon="['fas', 'moon']" class="swap-on fa-lg" />
       </label>
 
-      <button type="button" class="btn btn-secondary">Button</button>
+      <button type="button" class="btn btn-outline btn-primary">Signup</button>
+      <button type="button" class="btn btn-ghost">For Employers</button>
     </div>
   </div>
 </template>
